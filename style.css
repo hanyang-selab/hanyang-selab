@@ -9,6 +9,7 @@
 .leftside{
     width: 150px;
     float: left;
+    padding-left: 8px;
 /*    border: 2px solid black;*/
 }
 .rightside{
@@ -28,11 +29,19 @@
 }
 .notice{
     float: right;
-    width: 200px;
+    width: 49.13%;
+    height: 250px;
     border: 2px solid black;
 }
 .news{
     float: left;
-    width: 200px;
+    width: 49.6%;
+    height: 250px;
     border: 2px solid black;
+}
+.timetable{
+    border: 2px solid black;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
 }
