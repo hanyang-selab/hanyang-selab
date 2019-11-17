@@ -23,3 +23,16 @@
     text-align: center;
     margin-top: 2px;
 }
+.aboutus{
+    border: 2px solid black;
+}
+.notice{
+    float: right;
+    width: 200px;
+    border: 2px solid black;
+}
+.news{
+    float: left;
+    width: 200px;
+    border: 2px solid black;
+}
