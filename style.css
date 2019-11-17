@@ -1,0 +1,25 @@
+.main{
+    border-bottom-color: black;
+    border: 2px solid black;
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+}
+.leftside{
+    width: 150px;
+    float: left;
+/*    border: 2px solid black;*/
+}
+.rightside{
+    width: 630px;
+    float: right;
+    border: 2px solid black;
+    height: 600px;
+}
+.mainbutton{
+    border: 2px solid gray;
+    height: 30px;
+    text-align: center;
+    margin-top: 2px;
+}
