@@ -75,7 +75,7 @@ h1{
 }
 .aboutus{
     background-color: #B5B5B5;
-    height: 350px;
+    height: 370px;
     overflow: hidden;
     border-radius: 10px;
     border: 2px solid white;
@@ -86,7 +86,7 @@ h1{
     font-weight: bold;
 }
 .aboutus hr{
-    width: 95%;
+    width: 97%;
     border: solid 1px white;
 }
 .news, .notice{
