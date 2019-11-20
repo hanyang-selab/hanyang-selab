@@ -22,7 +22,7 @@ body{
     text-align: center;
 /*    padding-left: 8px;*/
 /*    border: 2px solid black;*/
-    padding: 2px;
+    padding: 5px;
     overflow: hidden;
 }
 .rightside{
@@ -37,19 +37,34 @@ body{
     overflow: hidden;
     width: 100%;
 }
-.notice{
-    float: right;
-    width: 49.13%;
+.display-3{
+    margin: auto;
+    width: 49.9%;
     height: 250px;
-    border: 2px solid black;
+/*    border: 2px solid black;*/
 }
-.news{
+.display-3 .hr-short{
+    width: 10%;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
     float: left;
-    width: 49.6%;
-    height: 250px;
-    border: 2px solid black;
 }
-.timetable{
+
+.display-3 .hr-long{
+    float: left;
+    width: 80%;
+    border: 1px solid gray;
+/*    padding: 0px;*/
+    margin: 0px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.display-4{
     border: 2px solid black;
     width: 100%;
     height: 230px;
@@ -108,6 +123,6 @@ h1{
     margin-left: 2%;
     width: 550px;
 }
-.map{
+.display-5{
     margin: 5px;
 }
