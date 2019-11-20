@@ -38,9 +38,9 @@ body{
     width: 100%;
 }
 .display-3{
-    margin: auto;
-    width: 49.9%;
-    height: 250px;
+    margin: 3px;
+    width: 49.3%;
+/*    height: 250px;*/
 /*    border: 2px solid black;*/
 }
 .display-3 .hr-short{
@@ -53,8 +53,8 @@ body{
 
 .display-3 .hr-long{
     float: left;
-    width: 80%;
-    border: 1px solid gray;
+    width: 85%;
+    border: 2px solid gray;
 /*    padding: 0px;*/
     margin: 0px;
 }
@@ -63,6 +63,9 @@ body{
 }
 .right{
     float: right;
+}
+.perfect{
+    width: 100%;   
 }
 .display-4{
     border: 2px solid black;
