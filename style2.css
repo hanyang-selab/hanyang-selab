@@ -30,7 +30,7 @@ body{
     width: 890px;
     float: right;
 /*    border: 2px solid black;*/
-    height: 750px;
+/*    height: 750px;*/
     overflow: hidden;
 }
 .bottom{
@@ -73,7 +73,7 @@ body{
 h1{
     font-family: arial;
 }
-.aboutus{
+.display-2{
     background-color: #B5B5B5;
     height: 370px;
     overflow: hidden;
@@ -81,11 +81,11 @@ h1{
     border: 2px solid white;
     border-radius: 10px;
 } 
-.aboutus h1{
+.display-2 h1{
     font-size: 60pt;
     font-weight: bold;
 }
-.aboutus hr{
+.display-2 hr{
     width: 97%;
     border: solid 1px white;
 }
@@ -103,4 +103,11 @@ h1{
 }
 .display-1 .code{
     color: #E6749D;
+}
+.display-1-1{
+    margin-left: 2%;
+    width: 550px;
+}
+.map{
+    margin: 5px;
 }

@@ -9,7 +9,30 @@
         <!-- google maps-->
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src"/js/map.js"></script>
+        <script>
+            $(document).on('pagecreate',function(){
+                if( navigator.geolocation == undefined ) {
+                    alert(" 위치 정보를 이용할 수 없습니다.")
+                    return;
+                }
+                var ccc = new google.maps.LatLng(37.296456, 126.838862);
+                var mm = new google.maps.Map(
+                    pos,//<--지도가 보여질 영역
+                    {
+                        zoom:18,// 숫자만큼 지도확대 (1~30)
+                        center:ccc, // 해당 위치를 중앙에 배치
+                        mapTypeId:google.maps.MapTypeId.ROADMAP //지도타입
+                    }
+                );
+            var zzz = new google.maps.Marker(
+                {
+                    position:ccc,
+                    map:mm,
+                    title:"학연산 클러스터 6층"
+                }
+            );
+            });
+        </script>
         <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
         <!-- google maps end-->
     </head>
@@ -52,7 +75,7 @@
 
                 </div>
                 <div class="rightside">
-                    <div class="aboutus">
+                    <div class="display-2">
                         <h1>&nbsp;Hello World!</h1>
                         <hr/>
                         <div class="content">
@@ -61,7 +84,6 @@
                             Research Area: Web and Web Security. Formal Engineering Methods. Requirement Engineering. Real-Time Software Engineering. Semi-structured Data<br><br>
                              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                         </div>
-                        
                     </div>
                     <div class="news">
                         <div class="maintitle">What's News</div>
@@ -85,7 +107,9 @@
                     <div class="timetable">
                         시간표
                     </div>
-                </div>
+                    <div class="map">
+                        <div id="pos" style="width:100%;height: 500px;margin: auto"></div>
+                    </div>
                 <div class="bottom">
                     <div class="display-1">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">/body</span>&gt;<br/>
