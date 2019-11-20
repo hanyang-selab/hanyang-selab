@@ -4,68 +4,139 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SELAB</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <!-- google maps-->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script>
+            $(document).on('pagecreate',function(){
+                if( navigator.geolocation == undefined ) {
+                    alert(" 위치 정보를 이용할 수 없습니다.")
+                    return;
+                }
+                var ccc = new google.maps.LatLng(37.296456, 126.838862);
+                var mm = new google.maps.Map(
+                    pos,//<--지도가 보여질 영역
+                    {
+                        zoom:18,// 숫자만큼 지도확대 (1~30)
+                        center:ccc, // 해당 위치를 중앙에 배치
+                        mapTypeId:google.maps.MapTypeId.ROADMAP //지도타입
+                    }
+                );
+            var zzz = new google.maps.Marker(
+                {
+                    position:ccc,
+                    map:mm,
+                    title:"학연산 클러스터 6층"
+                }
+            );
+            });
+        </script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        <!-- google maps end-->
     </head>
     <body>
-        <div class="main">
-            <div class="leftside">
-                <a href="#" class="list-group-item list-group-item-action active">
-                    SE Lab
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">Member</a>
-                <a href="#" class="list-group-item list-group-item-action">Course</a>
-                <a href="#" class="list-group-item list-group-item-action">Publication</a>
-                <a href="#" class="list-group-item list-group-item-action">Login</a>
+        <div class="all-display">
+            <div class="main">
+                <div class="display-1">
+                    <div class="display-1-1">
+                        &lt;<span class="code">html</span>&gt;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">head</span>&gt;<br/>
+                                <!--title-->
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">title</span>&gt;
+                                SELab
+                                &lt;<span class="code">/title</span>&gt;<br/>
+                                <!--explain-->
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">Explain</span>&gt;
+                                Software Engineering Lab
+                                &lt;<span class="code">/explain</span>&gt;<br/>
+                                <!--leader-->
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">Leader</span>&gt;
+                                asst. Prof. Scott Ukjin Lee
+                                &lt;<span class="code">/Leader</span>&gt;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">/head</span>&gt;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">body</span>&gt;<br/>
+                    </div>
 
-            </div>
-            <div class="rightside">
-                <div class="aboutus">
-                    <div class="content">
-                        &nbsp;&nbsp;&lt;<font color="#FB5353">html</font>&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<font color="#FB5353">head</font>&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<font color="#FB5353">title</font>&gt;
-                        SELAB
-                        &nbsp;&lt;<font color="#FB5353">/title</font>&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<font color="#FB5353">/head</font>&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<font color="#FB5353">body</font>&gt;<br>
+                </div>
+                <div class="leftside">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action list-group-item-black">SELab</a>
+                      <a href="/research/index.html" class="list-group-item list-group-item-action list-group-item-primary">Research</a>
+                      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Publication</a>
+                      <a href="#" class="list-group-item list-group-item-action list-group-item">Member</a>
+                      <a href="#" class="list-group-item list-group-item-action list-group-item">Course</a>
+                      <a href="#" class="list-group-item list-group-item-action list-group-item-info">Login</a>
+                    </div>
+
+                </div>
+                <div class="rightside">
+                    <div class="display-2">
+                        <h1>&nbsp;Hello World!</h1>
+                        <hr/>
+                        <div class="content">
+                            Software Engineering Laboratory Within the CSE Dept at HYU(ERICA)<br>
+                            Led by asst. prof. Scott Lee<br>
+                            Research Area: Web and Web Security. Formal Engineering Methods. Requirement Engineering. Real-Time Software Engineering. Semi-structured Data<br><br>
+                             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="display-3 left">
+                        <div class="maintitle">What's News</div>
+                        <hr class="hr-short">
+                        <hr class="hr-long">
+                        <ul>
+                            <li>Zhiqiang Wu, Xin Chen and Scott Uk-Jin Lee, "Identifying Latent Android Malware from Application's Description using LSTM," In Proc. International Conference on Information, System and Convergence Applications, </li>
+                            <li>뉴스</li>
+                            <li>뉴스</li>
+                            <li>뉴스</li>
+                            
+                        </ul>
+                   </div>
+                    <div class="display-3 right">
+                        <div class="maintitle">Notice</div>
+                        <ul>
+                            <li>SELab에서는 소프트웨어공학 전 분야, 멀티쓰레드 소프트웨어 및 웹 기술을 함께 연구할 석사, 박사, 석박통합 및 박사후 과정의 연구원을 모집 할 수도 안할 수도 있습니다.</li>
+                            <li>뉴스</li>
+                            <li>뉴스</li>
+                            <li>뉴스</li>
+                        </ul>
                     </div>
 <!--
-                    <h1 class="font-italic">About Uds</h1>
-                    <div class="content">
-                        Software Engineering Laboratory Within the CSE Dept at HYU(ERICA)<br>
-                        Led by asst. prof. Scott Lee<br>
-                        Research Area: Web and Web Security. Formal Engineering Methods. Requirement Engineering. Real-Time Software Engineering. Semi-structured Data<br>
+                    <div class="display-4">
+                        시간표
                     </div>
 -->
+                    <div class="display-5">
+                        <div id="pos" style="width:100%;height: 500px;margin: auto"></div>
+                    </div>
+                <div class="bottom">
+                    <div class="display-1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">/body</span>&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">info</span>&gt;<br/>
+                            <!--title--> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">location</span>&gt;
+                            Hanyang Univ. ERICA - Bd of College of Computing.
+                            &lt;<span class="code">/location</span>&gt;<br/>
+                            <!--explain-->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">email</span>&gt;
+                            example@hanyang.ac.kr
+                            &lt;<span class="code">/email</span>&gt;<br/>
+                            <!--leader-->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">call</span>&gt;
+                            031) 1234-5678
+                            &lt;<span class="code">/call</span>&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">/head</span>&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">body</span>&gt;<br/>
 
                 </div>
-                <div class="news">
-                    <div class="maintitle">What's News</div>
-                    <ul>
-                        <li>Zhiqiang Wu, Xin Chen and Scott Uk-Jin Lee, "Identifying Latent Android Malware from Application's Description using LSTM," In Proc. International Conference on Information, System and Convergence Applications, </li>
-                        <li>뉴스</li>
-                        <li>뉴스</li>
-                        <li>뉴스</li>
-                    </ul>
-               </div>
-                <div class="notice">
-                    <div class="maintitle">Notice</div>
-                    <ul>
-                        <li>SELab에서는 소프트웨어공학 전 분야, 멀티쓰레드 소프트웨어 및 웹 기술을 함께 연구할 석사, 박사, 석박통합 및 박사후 과정의 연구원을 모집 할 수도 안할 수도 있습니다.</li>
-                        <li>뉴스</li>
-                        <li>뉴스</li>
-                        <li>뉴스</li>
-                    </ul>
                 </div>
-                <div class="timetable">
-                    시간표
-                </div>
+                
             </div>
+            <!-- Bootstrap Start-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script> 
+            <!-- Bootstrap End-->
         </div>
-        <!-- Bootstrap Start-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script> 
-        <!-- Bootstrap End-->
     </body>
 </html>
