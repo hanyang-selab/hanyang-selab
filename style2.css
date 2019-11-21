@@ -186,3 +186,10 @@ h1{
 /*    border: 2px solid black;*/
     height: 50px;
 }
+.course-hr{
+    border: 1px solid gray;
+    width: 99%;
+    border-radius: 10px;
+    margin-top:0px;
+    margin-bottom: 5px;
+}
