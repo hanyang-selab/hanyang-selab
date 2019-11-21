@@ -6,35 +6,7 @@
         <title>SELAB</title>
         <link rel="stylesheet" href="style2.css">
         <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <!-- google maps-->
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script>
-            $(document).on('pagecreate',function(){
-                if( navigator.geolocation == undefined ) {
-                    alert(" 위치 정보를 이용할 수 없습니다.")
-                    return;
-                }
-                var ccc = new google.maps.LatLng(37.296456, 126.838862);
-                var mm = new google.maps.Map(
-                    pos,//<--지도가 보여질 영역
-                    {
-                        zoom:18,// 숫자만큼 지도확대 (1~30)
-                        center:ccc, // 해당 위치를 중앙에 배치
-                        mapTypeId:google.maps.MapTypeId.ROADMAP //지도타입
-                    }
-                );
-            var zzz = new google.maps.Marker(
-                {
-                    position:ccc,
-                    map:mm,
-                    title:"학연산 클러스터 6층"
-                }
-            );
-            });
-        </script>
-        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-        <!-- google maps end-->
+        
     </head>
     <body>
         <div class="all-display">
@@ -62,11 +34,11 @@
                 </div>
                 <div class="leftside">
                     <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action list-group-item-black">SELab</a>
-                      <a href="/research/index.html" class="list-group-item list-group-item-action list-group-item-primary">Research</a>
-                      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Publication</a>
-                      <a href="#" class="list-group-item list-group-item-action list-group-item">Member</a>
-                      <a href="#" class="list-group-item list-group-item-action list-group-item">Course</a>
+                      <a href="index.html" class="list-group-item list-group-item-action list-group-item-black">SELab</a>
+                      <a href="research/index.html" class="list-group-item list-group-item-action list-group-item-primary">Research</a>
+                      <a href="publication/index.html" class="list-group-item list-group-item-action list-group-item-secondary">Publication</a>
+                      <a href="member/index.html" class="list-group-item list-group-item-action list-group-item">Member</a>
+                      <a href="course/index.html" class="list-group-item list-group-item-action list-group-item">Course</a>
                       <a href="#" class="list-group-item list-group-item-action list-group-item-info">Login</a>
                     </div>
 
@@ -82,7 +54,7 @@
                              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                         </div>
                     </div>
-                    <div class="display-3 left">
+                    <div class="display-3 perfect">
                         <div class="maintitle">What's News</div>
                         <hr class="hr-short">
                         <hr class="hr-long">
@@ -91,11 +63,12 @@
                             <li>뉴스</li>
                             <li>뉴스</li>
                             <li>뉴스</li>
-                            
                         </ul>
                    </div>
-                    <div class="display-3 right">
+                    <div class="display-3 left">
                         <div class="maintitle">Notice</div>
+                        <hr class="hr-short">
+                        <hr class="hr-long">
                         <ul>
                             <li>SELab에서는 소프트웨어공학 전 분야, 멀티쓰레드 소프트웨어 및 웹 기술을 함께 연구할 석사, 박사, 석박통합 및 박사후 과정의 연구원을 모집 할 수도 안할 수도 있습니다.</li>
                             <li>뉴스</li>
@@ -103,14 +76,21 @@
                             <li>뉴스</li>
                         </ul>
                     </div>
+                    <div class="display-3 right">
+                        <div class="maintitle">Course</div>
+                        <hr class="hr-short">
+                        <hr class="hr-long">
+                        <ul>
+                            <li>Web Applicatoin</li>
+                            <li>어쩌고저쩌고</li>
+                        </ul>
+                    </div>
 <!--
                     <div class="display-4">
                         시간표
                     </div>
 -->
-                    <div class="display-5">
-                        <div id="pos" style="width:100%;height: 500px;margin: auto"></div>
-                    </div>
+                </div>
                 <div class="bottom">
                     <div class="display-1">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">/body</span>&gt;<br/>
@@ -129,7 +109,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">/head</span>&gt;<br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code">body</span>&gt;<br/>
 
-                </div>
+                    </div>
                 </div>
                 
             </div>
