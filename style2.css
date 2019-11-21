@@ -1,14 +1,16 @@
 body{
-    padding-top: 20px;
-    background-color: black;
+/*    background-color: #EAEAEA;*/
 }
 .all-display{
-    width: 100%;
-    height: 100%;
-    
+    background-color: #EAEAEA;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+/*    height: 100%;*/
 /*    background-color: #333333;*/
 }
 .main{
+    background-color: white;
     border-bottom-color: black;
     border: 2px solid #343a40;
     width: 1140px;
@@ -164,4 +166,23 @@ h1{
 
 .resarch-content li{
     font-size: 15px;
+}
+
+.course-box{
+    text-align: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 180px;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 5px;
+    float: left;
+}
+.course-title{
+/*    border: 2px solid black;*/
+    height: 100px;
+}
+.course-button{
+/*    border: 2px solid black;*/
+    height: 50px;
 }
