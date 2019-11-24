@@ -1,6 +1,7 @@
 .box {
   border-left: 3px solid red;
   padding-left: 10px;
+    
 }
 
 .nav_box {
@@ -10,7 +11,6 @@
   padding: 10px;
     border-radius: 3px;
     margin-left: 5px;
-
 }
 
 .nav_box:hover {
