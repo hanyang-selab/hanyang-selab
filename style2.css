@@ -300,3 +300,27 @@ input[type="checkbox"]:hover ~ span {
     z-index:1002;
     overflow: auto;
 }
+
+
+.pub-title{
+    width:700px;
+    float: left;
+    padding: 10px
+}
+.pub-url{
+/*    float: right;*/
+}
+.pub-aa{
+    overflow: hidden;
+    width: 100%;
+}
+.pub-desc{
+    width: 800px;
+    padding-left: 5px;
+    
+}
+
+.pub-sub{
+    padding: 5px;
+    float: left;
+}
